@@ -1,0 +1,59 @@
+{
+  "version": "1.0",
+  "created": "2026-01-08T16:19:28.278999",
+  "seed": 42,
+  "datasets": {
+    "cladder": {
+      "file": "cladder_eval.csv",
+      "samples": 1278,
+      "sampling_method": "deterministic: id % 8 == 0",
+      "sha256": "90fd991a77e0c617c843f5313d8a1a72531361c3a9e81af9520c1fcfa9a768e2",
+      "stratification": {
+        "rung_1": 404,
+        "rung_2": 383,
+        "rung_3": 491
+      }
+    },
+    "ccr_gb": {
+      "file": "ccr_gb_eval.csv",
+      "samples": 400,
+      "sampling_method": "deterministic: first 400 sorted by Task ID",
+      "sha256": "829ced4eb2b3cc591a78b8bdae3ad55d16100bbac5d7771d1206d4f63ca81397"
+    },
+    "corr2cause": {
+      "file": "corr2cause_eval.csv",
+      "samples": 400,
+      "sampling_method": "stratified by label (proportional)",
+      "sha256": "d60aecb4e0d13b406ed673bef3399c1bef1f983f89f48b4b11d3e172009f6ac1",
+      "stratification": {
+        "label_0": 338,
+        "label_1": 62
+      }
+    },
+    "causcibench": {
+      "file": "causcibench_eval.csv",
+      "samples": 155,
+      "sampling_method": "full dataset",
+      "sha256": "9538ee2df7c56d5b07984c4f1c9bbd16bdb8928c160ed549ebea537c6a10c60b"
+    },
+    "p3sa_synthetic": {
+      "file": "synthetic_eval_final.jsonl",
+      "samples": 600,
+      "sampling_method": "stratified by rung (200 each), deduplicated",
+      "sha256": "4ae4c934a486c9da372c5b2ca0305f3dfc985cbc30f4c492a0a80e3912487fa0",
+      "stratification": {
+        "rung_1": 200,
+        "rung_2": 200,
+        "rung_3": 200
+      },
+      "source": "test.jsonl (2550 samples, 85 DAGs)"
+    }
+  },
+  "total_samples": 2833,
+  "integrity_checks": {
+    "no_duplicates": true,
+    "stratification_verified": true,
+    "no_dag_leakage": true,
+    "all_prompts_valid": true
+  }
+}

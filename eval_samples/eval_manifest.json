@@ -1,0 +1,42 @@
+{
+  "seed": 42,
+  "n_samples": 2833,
+  "datasets": {
+    "cladder": {
+      "n_samples": 1278,
+      "sample_ids_hash": "253e4da9ace2f150f5cf3a66b05d9d56a2a5afdee0f28c044f4c59d56ef066d8"
+    },
+    "ccr_gb": {
+      "n_samples": 400,
+      "sample_ids_hash": "42f86ba9a0d67ab93a47b6a6fe77e4d8310318c31af0ce7c426fe45d105c2492"
+    },
+    "corr2cause": {
+      "n_samples": 400,
+      "sample_ids_hash": "a546422c95a12b042ecec9b89b0e79725faa03ac8433d43c3a9260401921a79e"
+    },
+    "causcibench": {
+      "n_samples": 155,
+      "sample_ids_hash": "8233fad0bcf366c7f8122ea8419eb1040ce912854b822ea5b308c2238a88608f"
+    },
+    "synthetic": {
+      "n_samples": 600,
+      "sample_ids_hash": "28e59e1ea541db17f13da79480c23c63840ec96c21fcf6646fd039dd8a026691"
+    }
+  },
+  "stratification": {
+    "corr2cause": {
+      "0": 338,
+      "1": 62
+    },
+    "synthetic_rung": {
+      "1": 200,
+      "2": 200,
+      "3": 200
+    },
+    "synthetic_answer": {
+      "yes": 329,
+      "no": 271
+    }
+  },
+  "eval_set_hash": "3168d4fbc0ea48a5cb09012f633ccb998573a400b58955a4a890840811642b2e"
+}
